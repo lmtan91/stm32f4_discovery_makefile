@@ -1,4 +1,6 @@
 # stm32f4_discovery_makefile
 
 # openocd to download the binary
-openocd -f openocd_config/stm32f4discovery.cfg -c "program demo.elf verify reset"
+1. Install **openocd** on Ubuntu, then all scripts will be located in **/usr/share/openocd/scripts/**
+2. To install **demo.elf**
+openocd -f board/stm32f4discovery.cfg -c "program demo.elf verify reset"
